@@ -1,0 +1,6 @@
+mage-ai
+dask[dataframe]
+psycopg2
+sshtunnel
+responses
+jsonschema

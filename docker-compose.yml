@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  etl_postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: dw_db
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - ./etl-postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
